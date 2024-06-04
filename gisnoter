@@ -1,0 +1,54 @@
+ændringer over tid
+visualization/mapping
+reading processing etc data
+
+spatial data:
+information about the locaitons and shapes of geographic features and the relationships between them. Any data that can be mapped!
+
+excel file with addresses
+a picture with coordinates
+vector datalayer ( aline representing a river, polygons representing census tracts, etc)
+an image of a map
+
+a set of tools for 
+collectin
+storing
+retriving
+transformin
+displaying 
+
+spatial data.
+
+geographic features indicate "where". Attribute table indicates "what"7
+
+To typer:
+vector data - points, lines polygons
+
+raster data (gridde data composed of pixes that store values.)
+
+points - et enkelt sæt koordinater
+line - en sekvens af coordinater, der derfinerer hvorigennem en linie
+trækkes.
+
+polygoner (areal), lidt som en linie, men første og sidste punkt
+er joined.
+
+Eksempler på vector data.
+Punkter - et kors der symboliserer en kirke, et træ for at symbolisere et træ.
+
+Linie En gul linie der repræsenterer en vej, stiplede linier der angiver grænser.
+polygoneR: et blåt område der repræsenterer en søg, et grønt område der repræsenterer en park.
+
+
+Rasterdata
+matrix af celler eller pixels, organiseret i rækker og kolnner.
+hver celle repræsenterer en værid, eg temperatur.
+rasters kan være digitale luftfotos, billeder, skannede kort.
+
+typer af rasterdata
+
+Tematiske data - diskreet - eg brug af land eller data på "soils"
+kontinuerte data - temperatur, elevation, spectral data fra sattelitter.
+
+Der er lag i gis. De kan kombinere både vektor og raster data.
+
