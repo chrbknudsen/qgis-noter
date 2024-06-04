@@ -1,9 +1,21 @@
-ændringer over tid
-visualization/mapping
-reading processing etc data
+---
+title: "GIS-noter"
+author: "Christian Knudsen"
+date: "2024-06-04"
+output: html_document
+---
 
-spatial data:
-information about the locaitons and shapes of geographic features and the relationships between them. Any data that can be mapped!
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Hvad bruger vi GIS til?
+Tillader os at studere ændringer over tid, 
+Vi kan visualiere ting på kort. Men gis er også samlingen af værktøjer der bruges til at læse og processere geografiske data.
+
+## spatial data:
+Er information om lokationer og former på geografiske features, og relationer mellem dem.
+Det er grundlæggende al data der kan kortlægges (på kort)
 
 excel file with addresses
 a picture with coordinates
@@ -24,9 +36,9 @@ geographic features indicate "where". Attribute table indicates "what"7
 To typer:
 vector data - points, lines polygons
 
-raster data (gridde data composed of pixes that store values.)
+raster data (gridded data bestående af pixels that store values.)
 
-points - et enkelt sæt koordinater
+* points - et enkelt sæt koordinater
 line - en sekvens af coordinater, der derfinerer hvorigennem en linie
 trækkes.
 
@@ -40,27 +52,33 @@ Linie En gul linie der repræsenterer en vej, stiplede linier der angiver græns
 polygoneR: et blåt område der repræsenterer en søg, et grønt område der repræsenterer en park.
 
 
-Rasterdata
+## Rasterdata
 matrix af celler eller pixels, organiseret i rækker og kolnner.
 hver celle repræsenterer en værid, eg temperatur.
 rasters kan være digitale luftfotos, billeder, skannede kort.
 
-typer af rasterdata
+### typer af rasterdata
 
 Tematiske data - diskreet - eg brug af land eller data på "soils"
 kontinuerte data - temperatur, elevation, spectral data fra sattelitter.
 
 Der er lag i gis. De kan kombinere både vektor og raster data.
 
-vektorformater: shpaefiles, gml. geopackage, geojson.
-raster, ofte geotiff, jpg, eller img.
+*vektorformater*: shpaefiles, gml. geopackage, geojson.
+*raster*, ofte geotiff, jpg, eller img.
 
+## Software pakker
 De to store software pakker er ArcGIS og QGIS.
+ArcGIS kan noget mere, den laver bedre 3d-grafik, og tillader "webgis". QGIS er gratis, og dækker behovet fint.
 
-Anvendelser
+## Anvendelser
 * fysiske karakteristika
 * sociale ditto
 * relationships between them
 * human behavior and experience in space
 *input for further analyses
+
+## The fun part
+Gå til options - general og hak af i "override system locale". Vælg 
+"simplified english" og locale : default C
 
