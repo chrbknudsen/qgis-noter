@@ -175,3 +175,45 @@ layout - export as image
 
 # Cartography
 
+Kunsten, videnskaben og processen at lave kort.
+
+En simplificeret visualiseirng der på abstrakt vis synliggør noget
+komplekst.
+
+scale of data
+Vi er ofte (altid) nødt til at finde data på samme skala som vi har geografiske data.
+
+## topografiske kort
+
+
+ghsl 
+
+andre kort - plugin quick map search. Og så esri
+
+
+
+projektioner. 
+det er værd at bruge lidt tid på Universal Transverse Mercator (UTM)
+
+
+coordinate reference system
+compoenets - coordinate system type (eg cartesian eller geographic (lat,long))
+datum framework for measuring a locaiton across surface gws84, ETR89
+Og en projektion.
+
+
+Identify features - men der skal være valgt et lag.
+
+vi bruger generelt EPSG 25832 for københavnsområdet
+
+
+Open atttribute tabel ved at højreklikke på et lag
+
+
+Join mellem tabel og polygoner
+layer properties - joins - grønt plus knap 
+
+
+Tilføj eget kort  det kræver vi kan fortælle hvor kortets koordinater
+er 
+georeferencer. 
