@@ -82,3 +82,96 @@ ArcGIS kan noget mere, den laver bedre 3d-grafik, og tillader "webgis". QGIS er 
 Gå til options - general og hak af i "override system locale". Vælg 
 "simplified english" og locale : default C
 
+Når vi skal igang - gør vi følgende (efter vi har åbnet qgis)
+
+Klik på "new project" ctrl-n
+
+Gem dokumentet under "Projects" Og husk at gemme undervejs.
+Der kan højreklikkes på "layers" og så får vi alle de forskellige toolboxes.
+Vælg "browser" 
+XYZ-tiles - og dernæst openstreetmap
+Den optræder nu i layers, og vi har det første lag!
+Der skal justeres på kortprojektionen. 
+For københavn skal den være (og den findes i nederste højre hjørne)
+den stod som epsg:3857. Vi filterer efter 25832, og finder 
+en projktion som vi vælger, og så gemmer vi.
+
+Vi kan gøre lag usynlige ved at fjerne tickmark i layers boxen.
+Vi kan også højreklikke og remove laget.
+
+Når pan-tool er valgt panner vi på kortet med kortet. Vi kan 
+bruge scroll-bar til at zoome. Ctrl+scroll zoomer mere præcist.
+
+Nu downloader vi noget data.
+
+opendata.dk
+https://www.opendata.dk/city-of-copenhagen/bydele
+download zip-filen til Raw data, og træk shp filen til kortet i 
+qgis.
+kan også tilføjes via "layer" vælg vektor og brows frem til shp-filen.
+
+Bemærk at rækkefølgen er vigtig. Hvis ikke "bydel" ligger over "openstreetmap" laget, kan vi ikke se den!
+
+
+
+Plugins!
+
+Plugins 
+manage and install plugins
+
+Jo flere vi installerer, jo flere toolbars får vi (adgang til)
+Start med Quickosm
+Den tillader os at hente yderligere data fra OSM.
+Husk at osm er crowdsourced, så der kan være kvalitetsproblemer.
+
+Gå nu til dropdown - vektor, quickosm, quickosm.
+vælg map preset. Dernæst på "urban"
+Vælg - ændre in til layer extent - og vælg bydel.
+run preset.
+Når den er færidg kan vi lukke
+
+Vi gør baggrundskortet og bydele usynlige.
+Der er to hovedlag - veje og bygninger.
+Betragt veje - Vi får forskellige veje vist -afhængig af zoom-nieveua.
+Dette er - selvfølgelig - liier.
+
+og så er der bygninger - det er polygoner.
+
+Nu henter vi så yderligere data.
+
+gentag. Vektor- quickosm -quickosm. Men nu i stedet for map preset,
+quick query.
+prøv at scrolle i dropdownmenuen under "key"
+
+Vi vil nu vise biblioteker 
+vælg ameneties og og value "library"
+in layer extent - enten building eller bydel. 
+run query
+Søg efter museum, i bydel. Og søg.
+
+Project - new print layout
+Nu får vi et nyt vindue - print layout.
+zoom ind en smule
+højre klik og vælg "page properties" - hvis du vil have andet end A4 i landscape
+
+klik på "add map" ude til venstre. og vælg et område på kortet.
+Hvis du vil justere - move item content (ogåse ude til venstre)
+det tillader både at flytte og at zoome
+
+add north arrow - den skal placeres. Du kan klikke på den og ændre 
+dens udseende
+
+Vælg item map,
+Hvor hulen var scale bar. den var også ude til venstre.
+
+add legend ligger også ude til venstre
+fjern auto update
+only show items within linked map
+dobbeltklik på eleenterne i legend.
+
+layout - export as image
+
+
+
+# Cartography
+
